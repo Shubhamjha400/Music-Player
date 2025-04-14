@@ -1,0 +1,60 @@
+const songs = [
+    {
+        id: 1,
+        title: "Starboy",
+        artist: "The Weeknd",
+        duration: "4:16",
+        thumbnail: "/images/image1.jpg",
+        musicUrl: "/music/starboy.mp3",
+    },
+    {
+        id: 2,
+        title: "Demons",
+        artist: "Imagine Dragons",
+        duration: "2:43",
+        thumbnail: "/images/image2.jpg",
+        musicUrl: "/music/demons.mp3",
+    },
+    {
+        id: 3,
+        title: "Thunder",
+        artist: "Imagine Dragons",
+        duration: "3:50",
+        thumbnail: "/images/image3.jpg",
+        musicUrl: "/music/thunder.mp3",
+    },
+    {
+        id: 4,
+        title: "Ghost Stories",
+        artist: "Coldplay",
+        duration: "3:30",
+        thumbnail: "/images/image4.jpg",
+        musicUrl: "/music/ghost.mp3",
+    },
+    {
+        id: 5,
+        title: "Viva La Vida",
+        artist: "Coldplay",
+        duration: "5:32",
+        thumbnail: "/images/image5.jpg",
+        musicUrl: "/music/viva.mp3",
+    },
+    {
+        id: 6,
+        title: "Hymn for the weekend",
+        artist: "Coldplay",
+        duration: "4:10",
+        thumbnail: "/images/image6.jpg",
+        musicUrl: "/music/hymn.mp3",
+    },
+    {
+        id: 7,
+        title: "Ice",
+        artist: "Seedhe Maut",
+        duration: "2:40",
+        thumbnail: "/images/image7.jpg",
+        musicUrl: "/music/pain.mp3",
+    },
+];
+
+export default songs;

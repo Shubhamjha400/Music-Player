@@ -1,0 +1,118 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* General layout */
+.app-container .row {
+  min-height: 100vh;
+}
+
+.main-content {
+  /* Remove any fixed height from parent; then, on mobile, allow scrolling */
+  overflow-y: auto;
+  
+  /* For mobile screens, subtract the mobile nav height */
+  @media (max-width: 767.98px) {
+    height: calc(100vh - 56px);
+  }
+}
+
+
+/* Left Sidebar */
+.sidebar-col {
+  background-color: transparent; /* Let the gradient show through */
+}
+.sidebar {
+  height: 100vh ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .spotify-brand {
+    font-weight: 600;
+    color: #fff;
+  }
+  .nav-links {
+    a {
+      color: gray !important;
+      font-weight: 500;
+      &.active,
+      &:hover {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+
+
+/* Middle Column: Song List */
+.song-list-col {
+  background-color: rgba(0, 0, 0, 0.3); /* Slight overlay */
+  color: #fff;
+  overflow-y: auto;
+}
+
+.song-list {
+  .custom-search {
+    background-color:transparent;
+    color: #fff;
+    border: none;
+    ::placeholder {
+      color: #ccc;
+    }
+  }
+
+  .song-list-item {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .song-title {
+      font-weight: 600;
+    }
+    .song-artist {
+      
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+  }
+}
+.translucent-search {
+  /* Translucent background for the search bar */
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50px; // Gives a rounded effect
+  overflow: hidden;
+
+  .form-control {
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important ;
+    
+    /* Ensure the placeholder is visible */
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    
+    /* Remove focus outline */
+    &:focus {
+      box-shadow: none;
+    }
+  }
+ .input-group-text {
+    background-color: transparent !important;
+    border: none !important ;
+    color: #fff !important ;
+    padding: 0.5rem 0.75rem;
+  }
+}
